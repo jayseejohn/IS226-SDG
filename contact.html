@@ -1,40 +1,86 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Peaceful World</title>
+<title>Peaceful World - Contact Us</title>
 <style>
-	body, html {
-	  min-height: 100%;
-	}
-  body { font-family: sans-serif; margin: 0; padding: 0; }
-  .block { width: 100%; }
+    body, html {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+		font-family: 'Trebuchet MS', sans-serif;    }
 
-  /* First Block (Header) */
-  .header-block { display: flex; align-items: center; padding: 20px; background-color: #f0f0f0; }
-  .logo { height: 50px; margin-right: 20px; }
-  nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
-  nav ul li { margin-left: 20px; }
-  nav ul li a { text-decoration: none; color: #333; }
+    .block { width: 100%; }
 
-  /* Second Block (Hero) */
-  .hero-block { /*position: relative; text-align: center; color: white; height:200px; margin-bottom: 20px;*/}
-  .hero-block img { width: 100%; display: block; }
-  .hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color:white; }
-  .hero-text h1 { /*font-size: 3em; margin-bottom: 20px; */}
-  .hero-text button { padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+    /* Header */
+    .header-block {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+    .logo { height: 50px; margin-right: 20px; }
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li { margin: 10px; }
+    nav ul li a { text-decoration: none; color: #333; }
 
-  /* Third Block (Banners) */
-  .banner-block { display: flex; justify-content: space-around; padding: 20px; }
-  .banner { background-color: rgba(0, 0, 0, 0.5); padding: 15px; color: white; text-align: center; width: 30%; }
-  .banner button { padding: 8px 15px; background-color: #28a745; color: white; border: none; cursor: pointer; }
+    /* Hero Image */
+    .hero-block img { width: 100%; display: block; }
+    .hero-text {
+        text-align: center;
+        padding: 20px;
+        background-color: #3295a2;
+        color: white;
+    }
+    .hero-text h1 { font-size: 2em; margin-bottom: 10px; }
+    .hero-text button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Banners */
+    .banner-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .banner {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+    @media (min-width: 768px) {
+        .banner { width: 30%; }
+    }
+    .banner button {
+        padding: 8px 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 </style>
 </head>
 <body>
 
 <div class="block header-block">
-  <img src="logo.png" alt="Logo" class="logo">
+    <a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a>
   <nav>
-    <ul>
+	<ul>
+      <li><a href="index.html">Home</a></li>
       <li><a href="get-involved.html">Get Involved</a></li>
       <li><a href="success-stories.html">Success Stories</a></li>
       <li><a href="justice.html">Access to Justice</a></li>
